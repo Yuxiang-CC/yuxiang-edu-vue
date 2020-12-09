@@ -1,4 +1,34 @@
-# vue-admin-template
+## 雨巷学院后台管理
+
+构建运行
+
+```bash
+# clone the project
+git clone git@github.com:Yuxiang-CC/yuxiang-edu-vue.git
+
+# enter the project directory
+cd yuxiang-edu-vue
+
+# install dependency
+npm install
+
+# develop
+npm run dev
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+### vue-admin-template
 
 English | [简体中文](./README-zh.md)
 
@@ -6,10 +36,9 @@ English | [简体中文](./README-zh.md)
 
 **Live demo:** http://panjiachen.github.io/vue-admin-template
 
-
 **The current version is `v4.0+` build on `vue-cli`. If you want to use the old version , you can switch branch to [tag/3.11.0](https://github.com/PanJiaChen/vue-admin-template/tree/tag/3.11.0), it does not rely on `vue-cli`**
 
-## Build Setup
+### Build Setup
 
 ```bash
 # clone the project
@@ -27,7 +56,7 @@ npm run dev
 
 This will automatically open http://localhost:9528
 
-## Build
+### Build
 
 ```bash
 # build for test environment
@@ -37,7 +66,7 @@ npm run build:stage
 npm run build:prod
 ```
 
-## Advanced
+### Advanced
 
 ```bash
 # preview the release environment effect
@@ -55,17 +84,17 @@ npm run lint -- --fix
 
 Refer to [Documentation](https://panjiachen.github.io/vue-element-admin-site/guide/essentials/deploy.html) for more information
 
-## Demo
+### Demo
 
 ![demo](https://github.com/PanJiaChen/PanJiaChen.github.io/blob/master/images/demo.gif)
 
-## Extra
+### Extra
 
 If you want router permission && generate menu by user roles , you can use this branch [permission-control](https://github.com/PanJiaChen/vue-admin-template/tree/permission-control)
 
 For `typescript` version, you can use [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (Credits: [@Armour](https://github.com/Armour))
 
-## Related Project
+### Related Project
 
 - [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
 
@@ -75,7 +104,7 @@ For `typescript` version, you can use [vue-typescript-admin-template](https://gi
 
 - [awesome-project](https://github.com/PanJiaChen/vue-element-admin/issues/2312)
 
-## Browsers support
+### Browsers support
 
 Modern browsers and Internet Explorer 10+.
 
@@ -83,7 +112,7 @@ Modern browsers and Internet Explorer 10+.
 | --------- | --------- | --------- | --------- |
 | IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
 
-## License
+### License
 
 [MIT](https://github.com/PanJiaChen/vue-admin-template/blob/master/LICENSE) license.
 
