@@ -25,12 +25,12 @@ npm run dev
 
 
 
-
+本项目使用[vue-admin-template](https://github.com/PanJiaChen/vue-admin-template)快速构建
 
 
 ### vue-admin-template
 
-English | [简体中文](./README-zh.md)
+English
 
 > A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
 
