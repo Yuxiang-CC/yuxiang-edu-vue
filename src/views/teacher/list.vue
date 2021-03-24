@@ -78,7 +78,7 @@
       <el-table-column label="操作">
       <template slot-scope="scope">
         <router-link :to="'/teacher/edit/' + scope.row.id" >
-          <el-button type="primary" size="mini" icon="el-icon-edit">编辑</el-button>
+          <el-button type="primary" size="mini" v-if="hasPerm('teacher.update')" icon="el-icon-edit">编辑</el-button>
         </router-link>
         <el-button el-button type="danger" size="mini" icon="el-icon-delete"
           @click="removeById(scope.$index, scope.row.id)">删除</el-button>

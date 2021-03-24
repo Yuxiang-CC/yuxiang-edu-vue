@@ -21,7 +21,17 @@
 
       <el-table-column prop="typeId" label="推荐位Id" />
       <el-table-column prop="title" label="广告名称" />
-      <el-table-column prop="imageUrl" label="广告图片" />
+      <!-- <el-table-column prop="imageUrl" label="广告图片" /> -->
+      <el-table-column label="广告图片" width="200" align="center">
+        <template slot-scope="scope">
+          <el-image 
+            :src="scope.row.imageUrl"
+            :preview-src-list="[scope.row.imageUrl]"
+            alt="scope.row.title" 
+            width="100%">
+          </el-image>
+        </template>
+      </el-table-column>
       <el-table-column prop="linkUrl" label="跳转地址" />
       <el-table-column prop="sort" label="排序" />
 

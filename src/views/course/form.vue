@@ -27,12 +27,19 @@ export default {
   components: {Info, Chapter, Publish}, // 注册组件
 
   created() {
-    if (this.$route.name === 'CourseChapterEdit') {
-      this.courseId = this.$route.params.id
-      this.active = 1
-    } else if (this.$route.name === 'CourseInfoEdit') {
-      this.courseId = this.$route.params.id
-      this.active = 0
+
+    console.log(this.$route)
+
+    // 判断是从修改课程信息还是课程章节
+    if (this.$route.params.id !== '') {
+
+      if (this.$route.path.indexOf('/course/info/') !== -1) {
+        this.courseId = this.$route.params.id
+        this.active = 0
+      } else if (this.$route.path.indexOf('/course/chapter/') !== -1) {
+        this.courseId = this.$route.params.id
+        this.active = 1
+      }
     }
   },
   data() {

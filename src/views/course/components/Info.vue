@@ -125,11 +125,6 @@ export default {
   },
   created(){
 
-    // Id来源于路由
-    // if (this.$route.name === 'CourseInfoEdit') {
-    //   this.$parent.courseId = this.$route.params.id
-    // }
-
     // 课程信息回显判断  Id来源于父组件
     if (this.$parent.courseId != null) {
       this.fetchCourseInfoById(this.$parent.courseId)

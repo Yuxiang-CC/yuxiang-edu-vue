@@ -19,13 +19,12 @@ service.interceptors.request.use(
             // let each request carry token
             // ['X-Token'] is a custom headers key
             // please modify it according to the actual situation
-            config.headers['Yuxiang-admin-Token'] = getToken()
+            config.headers['token'] = getToken()
         }
         return config
     },
     error => {
         // do something with request error
-        console.log(error) // for debug
         return Promise.reject(error)
     }
 )
@@ -60,7 +59,7 @@ service.interceptors.response.use(
                     cancelButtonText: 'Cancel',
                     type: 'warning'
                 }).then(() => {
-                    store.dispatch('user/resetToken').then(() => {
+                    store.dispatch('FedLogOut').then(() => {
                         location.reload()
                     })
                 })

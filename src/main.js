@@ -9,12 +9,15 @@ import locale from 'element-ui/lib/locale/lang/en' // lang i18n
 import '@/styles/index.scss' // global css
 
 import App from './App'
-import store from './store'
+import store from './store/index.js'
 import router from './router'
 
 import '@/icons' // icon
 import '@/permission' // permission control
 
+
+import { hasBtnPermission } from './utils/permission'
+Vue.prototype.hasPerm = hasBtnPermission
 
 /**
  * If you don't want to use mock-server
